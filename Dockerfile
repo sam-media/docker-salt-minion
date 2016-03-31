@@ -9,5 +9,4 @@ RUN apt-get update \
 
 ADD dumb-init /
 ENTRYPOINT ["/dumb-init"]
-ADD minion /etc/salt/
 CMD ["salt-minion", "-linfo"]
